@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearNewuser"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnquestion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <ImageView android:id="@+id/imageQuestion"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="@dimen/_29pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_question"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_question"/>
+            <FrameLayout android:id="@+id/frameStackchorechamp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_196pxv"
+                android:layout_marginBottom="@dimen/_108pxv"
+                android:layout_marginEnd="@dimen/_76pxh"
+                android:layout_marginStart="@dimen/_76pxh"
+                android:layout_marginTop="@dimen/_160pxv" android:layout_width="@dimen/_236pxh">
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtChoreChamp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:text="@string/lbl_chore_champ"
+                    style="@style/txtLuckiestGuyregular70" tools:text="@string/lbl_chore_champ"/>
+                <ImageView android:id="@+id/imageSubtract"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_196pxh"
+                    android:layout_marginEnd="@dimen/_36pxh"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_width="@dimen/_161pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_subtract}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_subtract"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnjoinaroom"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_63pxh"
+            android:layout_marginStart="@dimen/_63pxh"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_901cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtJoinaRoom"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_join_a_room"
+                style="@style/txtIntersemibold18" tools:text="@string/lbl_join_a_room"/>
+            <TextView android:id="@+id/txtEntercode"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="wrap_content"
+                android:text="@string/msg_enter_code"
+                style="@style/txtIntermedium15" tools:text="@string/msg_enter_code"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCreateARoomOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_63pxh"
+            android:layout_marginStart="@dimen/_63pxh"
+            android:layout_marginTop="@dimen/_41pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@string/lbl_create_a_room"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_create_a_room"/>
+    </LinearLayout>
+</layout>
